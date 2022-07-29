@@ -3,15 +3,11 @@ get_header();
 /* Template Name: Front Page*/
 ?>
 <div id="wrapper">
-    <div id="top"> </div><!--close top -->
 
-    <div id="inner-header"> </div><!--close inner-hedader -->
-
-    <div id="hero"> </div><!--close hero -->
 
     <!-- If we have post display them with while loop -->
 
-        <?php if (have_posts()) : ?>
+    <?php if (have_posts()) : ?>
             <?php while(have_posts()) : the_post() ; ?>
 
                 <?php the_content() ; ?>
@@ -22,7 +18,7 @@ get_header();
                 
         
 
-        <?php endif; ?>
+        <?php endif; ?> 
         
 </div><!-- close wrapper -->
 <?php

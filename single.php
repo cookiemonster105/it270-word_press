@@ -3,6 +3,8 @@
 get_header();
 ?>
 
+
+
 <div id="wrapper">
     <main>
             <?php if (have_posts()) : ?>
@@ -30,8 +32,8 @@ get_header();
             <?php endif; ?>
     </main>   
     
-    <aside>
-    </aside>
+   <?php get_sidebar(); ?> 
+   
 </div><!-- close wrapper -->
 <?php
 get_footer();
